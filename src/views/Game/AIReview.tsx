@@ -922,7 +922,6 @@ export class AIReview extends React.Component<AIReviewProperties, any> {
                             // only show numbers for well explored moves
                             // show number for AI choice and played move as well
                             if (mv && ((i === 0) ||
-                                       (variations[i].move === next_move_pretty_coords) ||
                                        (variations[i].visits >= Math.min(50, 0.1 * visits)))) {
                                 if (parseFloat(key).toPrecision(2).length < key.length) {
                                     key = parseFloat(key).toPrecision(2);
